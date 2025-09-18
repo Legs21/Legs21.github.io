@@ -1,5 +1,8 @@
-Here you can say lots of fun things about your site.
+Welcome to the journey!
 
-Maybe say a some things about yourself.
+This site will be used to track the progress of my final semester project for my CSPB degree.
 
-Or maybe what you plan to blog about.
+If all goes well (IF) there will be weekly posts regarding updates and progress made.
+
+<b>CURRENT PLAN<b>
+I want to create a site that tracks and catalogs my trips backcountry skiing. I will be creating a website using node.js and itegrating the ESRI software ArcGIS to accurately track where I go in the backcountry.
