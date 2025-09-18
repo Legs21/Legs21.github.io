@@ -5,4 +5,12 @@ This site will be used to track the progress of my final semester project for my
 If all goes well (IF) there will be weekly posts regarding updates and progress made.
 
 <b>CURRENT PLAN</b>  
-I want to create a site that tracks and catalogs my trips backcountry skiing. I will be creating a website using node.js and itegrating the ESRI software ArcGIS to accurately track where I go in the backcountry.
+I want to create a site that tracks and catalogs my trips backcountry skiing. I will be creating a website using node.js and itegrating the ESRI software ArcGIS to accurately track where I go in the backcountry.  
+Features I want to integrate include:
+<ul>
+  <li>Map of all trips</li>
+  <li>Calendar of trips</li>
+  <li>Summary of each trip</li>
+  <li>Place to customize gear used</li>
+  <li>Conditions of trip</li>
+</ul>
