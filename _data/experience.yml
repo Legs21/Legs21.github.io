@@ -17,7 +17,7 @@
 - company: "Kawa Coffee"
   #summary: "A data mining company dedicated to identifying leads in automotive dealerships customer data with the goal of helping them increase customer retention and sales."
   #logo: "/img/companylogos/aa.jpg"
-  #url: "https://www.autoalert.com/"
+  url: "https://www.kawa-coffee.com/"
   positions:
 
   - title: "Barista Manager"
@@ -32,7 +32,7 @@
 - company: "Paoli Peaks Ski Resort"
   summary:
   #logo: "/img/companylogos/aawa.png"
-  #url: "https://www.webbassociates.com/"
+  url: "https://www.paolipeaks.com/"
   positions:
 
   - title: "Assistant Snowmaking Manager"
