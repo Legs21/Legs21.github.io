@@ -1,5 +1,16 @@
 ## Project Proposal
 
+<b>CURRENT PLAN</b>  
+I want to create a site that tracks and catalogs my trips backcountry skiing. I will be creating a website using node.js and itegrating the ESRI software ArcGIS to accurately track where I go in the backcountry.  
+Features I want to integrate include:
+<ul>
+  <li>Map of all trips</li>
+  <li>Calendar of trips</li>
+  <li>Summary of each trip</li>
+  <li>Place to customize gear used</li>
+  <li>Conditions of trip</li>
+</ul>
+
 <b>Project Plan</b>  
 
 <b>Vision Statment:</b> This project will allow me to create and display ArcGIS layers and maps on a website that I create. This is exactly the career field that I am hoping to break into after this degree as an GIS Developer. I could just focus on the GIS aspect, but I also really want to refine my skills building websites and creating platforms to host this information.  
