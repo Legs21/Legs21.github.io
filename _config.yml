@@ -23,6 +23,7 @@ theme: "minima"
 #rss: rss
 
 header_pages:
+  - index.md
   - resume.html
   - archive.html
 
