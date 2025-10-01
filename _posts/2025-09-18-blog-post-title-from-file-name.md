@@ -1,4 +1,4 @@
-## Blog Post Title From First Header
+## Project Proposal
 
 <b>Project Plan</b>  
 
