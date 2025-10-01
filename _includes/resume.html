@@ -92,28 +92,23 @@
   {%- endif -%}
 </header>
 
-{%- if resume.sections.skills -%}
+{%- if resume.sections.education -%}
   <section class="content-section">
-    <header class="section-header"><h2>Skills</h2></header>
+    <header class="section-header"><h2>Education</h2></header>
     <div class="section-content">
-    {%- for skill in site.data.skills -%}
-      <div class="resume-item">
-        <h4 class="resume-item-details">{{ skill.skill }}</h4>
-        <div class="resume-item-copy">
-          {%- if skill.description -%}
-            <div class="skill-description">
-              {{ skill.description }}
-            </div>
+    {%- for education in site.data.education -%}
+      <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+        <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
+        <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
+        <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
+        <div class="resume-item-copy" >
+          {%- if education.awards -%}
+            <ul class="resume-item-list">
+              {%- for award in education.awards -%}<li>{{ award.award }}</li>{%- endfor -%}
+            </ul>
           {%- endif -%}
-          {%- if skill.list -%}
-            {%- assign skillSorted = skill.list | sort_natural -%}
-            <div class="skill-list">
-              {%- for item in skillSorted -%}
-                <span>{{ item }}</span>{%- if forloop.last -%}{%- else -%}<span> &bull; </span>{%- endif -%}
-              {%- endfor -%}
-            </div>
-          {%- endif -%}
-        </div>
+          </div>
+        <div class="resume-item-copy" itemprop="description">{{ education.summary }}</div>
       </div>
     {%- endfor -%}
     </div>
@@ -190,7 +185,35 @@
   </section>
 {%- endif -%}
 
-{%- if resume.sections.recognition -%}
+{%- if resume.sections.skills -%}
+  <section class="content-section">
+    <header class="section-header"><h2>Skills</h2></header>
+    <div class="section-content">
+    {%- for skill in site.data.skills -%}
+      <div class="resume-item">
+        <h4 class="resume-item-details">{{ skill.skill }}</h4>
+        <div class="resume-item-copy">
+          {%- if skill.description -%}
+            <div class="skill-description">
+              {{ skill.description }}
+            </div>
+          {%- endif -%}
+          {%- if skill.list -%}
+            {%- assign skillSorted = skill.list | sort_natural -%}
+            <div class="skill-list">
+              {%- for item in skillSorted -%}
+                <span>{{ item }}</span>{%- if forloop.last -%}{%- else -%}<span> &bull; </span>{%- endif -%}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endfor -%}
+    </div>
+  </section>
+{%- endif -%}
+
+<!--{%- if resume.sections.recognition -%}
   <section class="content-section">
     <header class="section-header"><h2>Recognition</h2></header>
     <div class="section-content">
@@ -199,29 +222,6 @@
         <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
         <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
         <div class="resume-item-copy">{{ recognition.summary }}</div>
-      </div>
-    {%- endfor -%}
-    </div>
-  </section>
-{%- endif -%}
-
-{%- if resume.sections.education -%}
-  <section class="content-section">
-    <header class="section-header"><h2>Education</h2></header>
-    <div class="section-content">
-    {%- for education in site.data.education -%}
-      <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-        <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-        <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
-        <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
-        <div class="resume-item-copy" >
-          {%- if education.awards -%}
-            <ul class="resume-item-list">
-              {%- for award in education.awards -%}<li>{{ award.award }}</li>{%- endfor -%}
-            </ul>
-          {%- endif -%}
-          </div>
-        <div class="resume-item-copy" itemprop="description">{{ education.summary }}</div>
       </div>
     {%- endfor -%}
     </div>
@@ -242,7 +242,7 @@
     {%- endfor -%}
     </div>
   </section>
-{%- endif -%}
+{%- endif -%} 
 
 {%- if resume.sections.associations -%}
   <section class="content-section">
@@ -258,6 +258,7 @@
     </div>
   </section>
 {%- endif -%}
+-->
 
 {%- if resume.sections.interests -%}
   <section class="content-section">
