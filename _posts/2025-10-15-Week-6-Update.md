@@ -1,7 +1,7 @@
 ## Week 6 Update
 
 <b>Complete items:</b>
-<li>Site is now publically available, check it out [here!](https://backcountryroutes.vercel.app/)</li>
+<li>Site is now publically available, check it out here! <https://backcountryroutes.vercel.app/> </li>
 <li>Other pages are built but empty.</li>
 <li>Started laying out Mapping process on ArcGIS.</li>
 <li>Added style and layout components to the main page, including a sticky header on the main page and links that actually work.</li>
