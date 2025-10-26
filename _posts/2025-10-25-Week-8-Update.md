@@ -2,7 +2,7 @@
 
 <b>Complete items:</b>
 <li>Updated routes and page organization iin the file system.</li>
-<li>Built out a template for he blog-style pages that will be created for each trip.</li>
+<li>Built out a template for the blog-style pages that will be created for each trip.</li>
 <li>Working on a dynamic sidebar with drop down under "Trips".</li>
 
 <b>For next week:</b>
